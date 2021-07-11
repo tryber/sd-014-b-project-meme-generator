@@ -30,3 +30,21 @@
     text-shadow: 5px 5px 5px black;
    
 }
+#fire{
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    padding: 10px;
+}
+#water{
+    color: white;
+    font-weight: bold;
+    background-color: blue;
+    padding: 10px;
+}
+#earth{
+    color: white;
+    font-weight: bold;
+    background-color: green;
+    padding: 10px;
+}
