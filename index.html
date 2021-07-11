@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meme Generator</h1>
+    </header>
+    <main>
+        <section>
+            Texto: <input id="text-input" type="text" placeholder="Digite o texto para seu meme" name="memeText" maxlength="60">
+            <br><br>
+            Foto: <input id="meme-insert" accept="image/*" type="file" name="imageMeme">   <!-- Refência de onde vi sobre o type ="file"... https://www.w3schools.com/html/html_form_input_types.asp -->
+         <!-- referencia do atributo accept https://www.braziljs.org/p/1001-formas-de-fazer-input-de-arquivos-com-javascript -->
+        </section>
+        <div id="meme-image-container">
+            <h2 id="meme-text"></h2>
+            <img id="meme-image" src="">          
+        </div>
+        <section id='btns'>
+            <h3>Estilos customizados:</h3>
+            <button id="fire">Fire 🔥</button>
+            <button id="water">Water💧</button>
+            <button id="earth">Earth 🍏</button>
+        </section> 
+        <h3>Memes pré-prontos:</h3>  
+        <section id="imgs">
+            <img id="meme-1" src="imgs/meme1.png">  
+            <img id="meme-2" src="imgs/meme2.png">  
+            <img id="meme-3" src="imgs/meme3.png">  
+            <img id="meme-4" src="imgs/meme4.png">  
+        </section> 
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
