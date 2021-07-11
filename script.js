@@ -3,6 +3,8 @@ const memePlace = document.getElementById('meme-image-container');
 const h2 = document.getElementById('meme-text');
 const selectedImage = document.getElementById('meme-image');
 const chooseImage = document.getElementById('meme-insert');
+const preMemes = document.querySelector('#imgs').children;
+const btn = document.querySelectorAll("button");
 
 function showMemeText(){
 h2.innerText = input.value;
@@ -35,7 +37,6 @@ function changeBorderContainer(event){
 }
 
 function addEventOnButtons(){
-    const btn = document.querySelectorAll("button");
     for(let key of btn){
         key.addEventListener('click', changeBorderContainer);
     }
@@ -43,4 +44,18 @@ function addEventOnButtons(){
 }
 addEventOnButtons();
 
+
+function changeMemeWithPreMemes(event){
+    selectedImage.src = event.target.src;
+}
+
+function addEventInMemes(){
+    for(let key of preMemes){
+        key.addEventListener('click', changeMemeWithPreMemes);
+
+    }
+
+}
+
+addEventInMemes();
 

@@ -48,3 +48,30 @@
     background-color: green;
     padding: 10px;
 }
+#btns{
+    margin-bottom: 30px    ;
+}
+#meme-1{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+}
+#meme-2{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+}
+#meme-3{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+}
+#meme-4{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+}
