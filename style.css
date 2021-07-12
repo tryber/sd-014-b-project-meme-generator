@@ -1,43 +1,42 @@
 h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 #meme-image-container {
-    width: 500px;
-    height: 400px;
-    border: solid black 1px;
-    background-color: white;
+  width: 500px;
+  height: 400px;
+  border: solid black 1px;
+  background-color: white;
 }
 
-/* sombra aprendida através de: https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-shadow aonde os valores representam (descolamento x; deslocamento y; desfoque, cor da sombra) */
+/* sombra aprendida através de: https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-shadow aonde os valores representam (
+    descolamento x; deslocamento y; desfoque, cor da sombra) */
 
 h2 {
-    position: absolute;
-    display: flex;
-    font-size: 30px;
-    width: 300px;
-    height: 100px;
-    text-shadow: black 5px;
-    color: white;
-    text-shadow: 5px 5px 5px black;   
+  position: absolute;
+  display: flex;
+  font-size: 30px;
+  width: 300px;
+  height: 100px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
 }
 
 button {
-    border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    margin-top: 15px;
-    font: bold;
+  border-radius: 10px;
+  font-family: bold, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 15px;
 }
 
 #fire {
-    background-color: red;
+  background-color: red;
 }
 
 #water {
-    background-color: blue;
+  background-color: blue;
 }
 
 #earth {
-    background-color: green;
+  background-color: green;
 }
