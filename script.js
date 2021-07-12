@@ -20,3 +20,5 @@ fileToLoad.addEventListener('change', loadFile);
 
 // Requisito 3
 // feito no CSS
+// Requisito 4 
+// feito no CSS
