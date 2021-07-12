@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href=style.css>
-  <title>Document</title>
-</head>
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
 
-  <script src='script.js'></script>
-</body>
+  <body>
+    <header>
+      <div id="container-functions">
+        <h1 id="title">MEME GENERATOR!</h1>
+        <span>TEXT:</span>
+        <input id="text-input" type="text" placeholder="Max. 120 Caracteres!" maxlength="120"/>
+        <span>FONT-SIZE:</span>
+        <input id="font-size" type="range" min="15" max="28" />
+      </div>
+    </header>
+    <section>
+      <div id="meme-image-container">
+        <p id="meme-text"></p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
