@@ -9,7 +9,7 @@
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     color: white;
-    text-shadow: 5px 5px 5px  black;
+    text-shadow: 5px 5px 5px  black; /* requisito 4 */
   }
 
 #meme-image-container {
@@ -27,3 +27,14 @@
     z-index: 1;
   } /* até aqui requisitos 1 e 2 */
 
+  #fire {
+    background-color: red;
+  }
+  
+  #water {
+    background-color: blue;
+  }
+  
+  #earth {
+    background-color: green;
+  }

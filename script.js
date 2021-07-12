@@ -22,3 +22,27 @@ fileToLoad.addEventListener('change', loadFile);
 // feito no CSS
 // Requisito 4 
 // feito no CSS
+// Requisito 5
+// limite do input no index
+// Requisito 6
+const memeContainer = document.querySelector('#meme-image-container'); // acessa e amarzena a div onde está contido o meme
+
+const buttonFire = document.querySelector('#fire'); // acessa e armazena o valor do botão criado no index
+function addColorFire (){
+  memeContainer.style.border = '3px dashed red';
+}
+buttonFire.addEventListener('click', addColorFire);
+
+
+const buttonWater = document.querySelector('#water'); // acessa e armazena o valor do botão criado no index
+function addColorWater (){
+  memeContainer.style.border = '5px double blue';
+}
+buttonWater.addEventListener('click', addColorWater); // adiciona o evento de click no button e a função a ser realizada ao clicar
+
+const buttonEarth = document.querySelector('#earth');
+function addColorEarth (){
+    memeContainer.style.border = '6px groove green';
+}
+  buttonEarth.addEventListener('click', addColorEarth); // adiciona o evento de click no button e a função a ser realizada ao clicar
+  
