@@ -19,3 +19,4 @@ fileToLoad.addEventListener('change', loadFile);
 // ou seja, quando há alguma alteração na file(input) o evento é disparado e troca a fonte da imagem
 
 // Requisito 3
+// feito no CSS
