@@ -45,4 +45,18 @@ function addColorEarth (){
     memeContainer.style.border = '6px groove green';
 }
   buttonEarth.addEventListener('click', addColorEarth); // adiciona o evento de click no button e a função a ser realizada ao clicar
+
+// Requisito 7
+const memesBase = document.querySelectorAll('.meme-base'); // seleciona todos os elementos da classe meme-base
+
+function insertBaseMeme() {
+  const inputImage = document.querySelector('#meme-image'); // aqui seleciona e amarzena a image que é inserida na div do meme (meme-section)
+  for (const meme of memesBase) { // The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects
+    meme.addEventListener('click', inputBaseMeme); // On each iteration a value of a different property is assigned to variable
+    function inputBaseMeme (){  // o evento de click será em cada imagem de base
+    inputImage.src = meme.src; // traz de volta o valor de input da imagem do início e adiciona a fonte dela para a imagem base clicada
+    } // o loop do for of interage 
+  }
+}
+insertBaseMeme();
   

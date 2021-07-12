@@ -41,24 +41,57 @@ header {
     z-index: 0;
   }
   
-  #meme-image {
+#meme-image {
     height: 100%; /* como a a imagem está dentro do container o 100% irá respeitar o valor definido a cima da div */
     width: 100%;
     z-index: 1;
   } /* até aqui requisitos 1 e 2 */
 
-  #fire {
+#fire {
     background-color: red;
   }
   
-  #water {
+#water {
     background-color: blue;
   }
   
-  #earth {
+#earth {
     background-color: green;
   }
 
-  .button {
+.button {
       font-size: 30px;
   }
+
+#base-meme {
+  margin-top: 80px;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+#meme-1{
+    height: 300px;
+    width: 300px;
+    border: 3px solid black;
+}
+#meme-2{
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+}
+ 
+#meme-3{
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+}
+
+#meme-4{
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+}
+  

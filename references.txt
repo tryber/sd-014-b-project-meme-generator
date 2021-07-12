@@ -6,3 +6,4 @@ https://github.com/tryber/sd-012-project-meme-generator/blob/patrick-dack-meme-g
 https://developer.mozilla.org/en-US/docs/Web/API/Document/keyup_event
 https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
