@@ -1,0 +1,6 @@
+#meme-image {
+    width: 400px;
+    height: 550px;
+    position: absolute;
+    z-index: -999;
+}
