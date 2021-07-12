@@ -2,13 +2,18 @@ body {
   text-align: center;
 }
 
-#meme-image-container {
+#meme-image-container, #exemplos-container {
   background-color: white;
   border: 1px solid black;
   height: 300px;
   width: 400px;
   margin: auto;
   display: block;
+  position: relative;
+}
+
+#exemplos-container {
+  height: 70px;
 }
 
 #meme-text {
@@ -36,4 +41,18 @@ body {
 
 #earth {
   background-color: green;
+}
+
+.img-exemplo {
+  display: inline-block;
+  border-style: 1px solid black;
+  height: 70px;
+  width: 95px;
+}
+
+#text-input {
+  border-radius: 3px;
+  height: 30px;
+  width: 200px;
+  text-align: center;
 }

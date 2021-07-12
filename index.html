@@ -9,16 +9,22 @@
 </head>
 <body>
   <header><b>MEME GENERATOR</b></header><br>
+  <h3>Digite o texto do seu meme:</h3>
   <input type='text' id='text-input' maxlength='60'><br><br>
-  <input type='file' id='meme-insert'><br><br>
+  <input type='file' id='meme-insert' accept='image/*'><br><br>
   <div id='meme-image-container'>
     <h2 id='meme-text'></h2>
     <img id='meme-image' src='' alt=''><br>
-
     <button id='fire'>Fire</button>
     <button id='water'>Water</button>
     <button id='earth'>Earth</button>
-    
+    <h3>Você pode escolher uma das imagens abaixo:</h3>
+    <div id='exemplos-container'>
+      <img id='meme-1' class='img-exemplo' src='imgs/meme1.png' alt=''>
+      <img id='meme-2' class='img-exemplo' src='imgs/meme2.png' alt=''>
+      <img id='meme-3' class='img-exemplo' src='imgs/meme3.png' alt=''>
+      <img id='meme-4' class='img-exemplo' src='imgs/meme4.png' alt=''>
+    </div>
   </div>
   <script src='script.js'></script>
 </body>
