@@ -1,11 +1,11 @@
 window.onload = function() {
 
   const input = document.getElementById('text-input');
-  input.addEventListener('keyup', insert);
+  input.addEventListener('change', insert);
 
   function insert() {
-    let string = document.getElementById('text-input').value;
-    let container = document.getElementById('meme-text');
+    const string = document.getElementById('text-input').value;
+    const container = document.getElementById('meme-text');
     container.innerText = string;
   }
-}
+};
