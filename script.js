@@ -1,6 +1,6 @@
 const textInput = document.getElementById('text-input');
 const memeText = document.getElementById('meme-text');
-
+const container = document.querySelector('#meme-image-container');
 
 function text() {
   memeText.innerText = textInput.value;
@@ -21,3 +21,25 @@ function image(imagem) {
 }
 
 imgInput.addEventListener("change", image);
+
+
+function borda1() {
+  container.style.border = 'dashed red 3px';
+}
+
+const buton1 = document.querySelector('#fire');
+buton1.addEventListener('click', borda1);
+
+function borda2() {
+  container.style.border = 'double blue 5px';
+}
+
+const buton2 = document.querySelector('#water');
+buton2.addEventListener('click', borda2);
+
+function borda3() {
+  container.style.border = 'groove green 6px';
+}
+
+const buton3 = document.querySelector('#earth');
+buton3.addEventListener('click', borda3);
