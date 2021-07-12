@@ -1,0 +1,29 @@
+
+#meme-text {
+    z-index: 2; /* z index define a ordem de aparição do elemento (texto em cima(sobre a) da imagem) */ 
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 18%;
+    word-wrap: break-word;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    color: rgb(7, 0, 0);
+    text-shadow: 5px 5px 5px rgb(238, 177, 8);
+  }
+
+#meme-image-container {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 0;
+  }
+  
+  #meme-image {
+    height: 100%; /* como a a imagem está dentro do container o 100% irá respeitar o valor definido a cima da div */
+    width: 100%;
+    z-index: 1;
+  }
