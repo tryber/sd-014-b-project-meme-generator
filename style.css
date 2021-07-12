@@ -1,4 +1,24 @@
 
+header {
+    font-size: 90px;
+}
+
+#text-input{
+    font-size: 30px;
+}
+
+#label1 {
+    font-size: 30px;
+}
+
+#label2 {
+    font-size: 30px;
+}
+
+#meme-insert {
+    font-size: 20px;
+}
+
 #meme-text {
     z-index: 2; /* z index define a ordem de aparição do elemento (texto em cima(sobre a) da imagem) */ 
     position: absolute;
@@ -37,4 +57,8 @@
   
   #earth {
     background-color: green;
+  }
+
+  .button {
+      font-size: 30px;
   }
