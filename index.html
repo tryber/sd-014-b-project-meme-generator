@@ -10,11 +10,20 @@
 </head>
 <body>
     <header id="header">Meme Generator</header>
+    <section id="input">
+        <label for="">Text:</label>
+        <input id="text-input" type="text" maxlength="60">
+        <br>
+        <br>
+        <label for="">Image:</label>
+        <input type="file" accept="imgs" id="meme-insert">
+      </section>
     <main>
-        <label class="input-text"> Texto:</label>  
-        <div id="meme-image-container">
-        <textarea id="meme-text" name="meme-text"  ></textarea>
-        </div>
+        <section id="meme-image-container">
+            <h2 id="meme-text"></h2>
+            <h2 id="meme-bottom-text"></h2>
+            <img id="meme-image" src="" alt="">
+          </section>
     </main>
 </body>
 </html>
