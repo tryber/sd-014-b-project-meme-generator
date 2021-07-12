@@ -1,0 +1,15 @@
+#meme-image {
+  width: 400px;
+  position: absolute;
+}
+
+#meme-text {
+  border: solid black;
+  height: 50px;
+  width: 300px;
+  position:relative;
+
+}
+#meme-image-container {
+  
+}
