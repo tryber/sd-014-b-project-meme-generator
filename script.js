@@ -28,21 +28,21 @@ fileToLoad.addEventListener('change', loadFile);
 const memeContainer = document.querySelector('#meme-image-container'); // acessa e amarzena a div onde está contido o meme
 
 const buttonFire = document.querySelector('#fire'); // acessa e armazena o valor do botão criado no index
-function addColorFire (){
+function addColorFire() {
   memeContainer.style.border = '3px dashed red';
 }
 buttonFire.addEventListener('click', addColorFire);
 
 
 const buttonWater = document.querySelector('#water'); // acessa e armazena o valor do botão criado no index
-function addColorWater (){
+function addColorWater() {
   memeContainer.style.border = '5px double blue';
 }
 buttonWater.addEventListener('click', addColorWater); // adiciona o evento de click no button e a função a ser realizada ao clicar
 
 const buttonEarth = document.querySelector('#earth');
-function addColorEarth (){
-    memeContainer.style.border = '6px groove green';
+function addColorEarth() {
+  memeContainer.style.border = '6px groove green';
 }
   buttonEarth.addEventListener('click', addColorEarth); // adiciona o evento de click no button e a função a ser realizada ao clicar
 
@@ -51,12 +51,11 @@ const memesBase = document.querySelectorAll('.meme-base'); // seleciona todos os
 
 function insertBaseMeme() {
   const inputImage = document.querySelector('#meme-image'); // aqui seleciona e amarzena a image que é inserida na div do meme (meme-section)
-  for (const meme of memesBase) { // The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects
+  for (const meme of memesBase) {// The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects
     meme.addEventListener('click', inputBaseMeme); // On each iteration a value of a different property is assigned to variable
-    function inputBaseMeme (){  // o evento de click será em cada imagem de base
-    inputImage.src = meme.src; // traz de volta o valor de input da imagem do início e adiciona a fonte dela para a imagem base clicada
-    } // o loop do for of interage 
+    function inputBaseMeme() { // o evento de click será em cada imagem de base
+      inputImage.src = meme.src; // traz de volta o valor de input da imagem do início e adiciona a fonte dela para a imagem base clicada
+    } // o loop do for of interage
   }
 }
 insertBaseMeme();
-  
