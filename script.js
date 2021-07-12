@@ -33,7 +33,6 @@ function addColorFire() {
 }
 buttonFire.addEventListener('click', addColorFire);
 
-
 const buttonWater = document.querySelector('#water'); // acessa e armazena o valor do botão criado no index
 function addColorWater() {
   memeContainer.style.border = '5px double blue';
@@ -44,7 +43,7 @@ const buttonEarth = document.querySelector('#earth');
 function addColorEarth() {
   memeContainer.style.border = '6px groove green';
 }
-  buttonEarth.addEventListener('click', addColorEarth); // adiciona o evento de click no button e a função a ser realizada ao clicar
+buttonEarth.addEventListener('click', addColorEarth); // adiciona o evento de click no button e a função a ser realizada ao clicar
 
 // Requisito 7
 const memesBase = document.querySelectorAll('.meme-base'); // seleciona todos os elementos da classe meme-base
