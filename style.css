@@ -16,3 +16,9 @@
   padding: 0px;
   margin: 0px;
 }
+
+#meme-text {
+  text-shadow: #000 5px 5px 5px;
+  font-size: 30px;
+  color: white;
+}
