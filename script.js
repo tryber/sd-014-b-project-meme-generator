@@ -43,3 +43,9 @@ function borda3() {
 
 const buton3 = document.querySelector('#earth');
 buton3.addEventListener('click', borda3);
+
+function memesProntos(imagem) {
+  memeImage.setAttribute('src', imagem.target.src);
+}
+const memes = document.querySelector('.memes-prontos');
+memes.addEventListener('click', memesProntos);
