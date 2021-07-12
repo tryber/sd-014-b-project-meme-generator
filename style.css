@@ -17,4 +17,6 @@ h2 {
     height: 100px;
     text-shadow: black 5px;
     color: white;
+    text-shadow: 5px 5px 5px black;
+    
 }
