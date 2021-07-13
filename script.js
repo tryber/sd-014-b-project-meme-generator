@@ -47,7 +47,7 @@ function leitorDeImagem(event) {
   const reader = new FileReader();
   reader.readAsDataURL(imagemUpada);
   reader.onloadend = () => {
-    document.querySelector('#meme-image').setAttribute('src', reader.result);    
+    document.querySelector('#meme-image').setAttribute('src', reader.result);
   };
 }
 campoUpLoadDaImagem.addEventListener('change', leitorDeImagem);
