@@ -1,0 +1,38 @@
+#meme-image-container {
+    height: 300px;
+    width: 300px;
+}
+
+#meme-image { 
+    margin-top: 20px;   
+    background-color: white;
+    border: black solid 1px;
+}
+
+#meme-text {
+    text-shadow: 5px 5px 5px black;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#button-container {
+    margin-top: 20px;
+}
+
+#meme-image.fire {
+    border: red solid 5px;
+}
+
+#meme-image.water {
+    border: aqua solid 5px;
+}
+
+#meme-image.earth {
+    border: burlywood solid 5px
+}
