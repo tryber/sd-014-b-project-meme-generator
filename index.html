@@ -9,21 +9,37 @@
 </head>
 <header>
     <h1>Meme Generator!!</h1>
-</header>
-<section>
     <label>Texto: </label>
     <input id="text-input" type="text" maxlength="60">
     <br>
     <label>Foto:</label>
     <input type="file"></button>
-</section>
+</header>
 <main>
     <div id="meme-image-container">
+        <img id='meme-image' src="" alt="Meme fabricado">
         <h2 id="meme-text"></h2>
     </div>
-    <button id="fire">Fire</button>
-    <button id="water">Water</button>
-    <button id="earth">Earth</button>
+    <section>
+        <button id="fire">Fire</button>
+        <button id="water">Water</button>
+        <button id="earth">Earth</button>   
+    </section>
+    <section id="sectionDosMemes">
+        <div class="memes" id="meme-1">
+            <img src="/imgs/meme1.png" alt="meme pré fabricado 1">
+        </div>
+        <div class="memes" id="meme-2">
+            <img src="/imgs/meme2.png" alt="meme pré fabricado 2">
+        </div>
+        <div class="memes" id="meme-3">
+            <img src="/imgs/meme3.png" alt="meme pré fabricado 3">
+        </div>
+        <div class="memes" id="meme-4">
+            <img src="/imgs/meme4.png" alt="meme pré fabricado 4">
+
+        </div>
+    </section>
 </main>
 <body>
     <script src="script.js"></script>

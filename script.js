@@ -8,6 +8,7 @@ function textAplly() {
 
 textInput.addEventListener('keyup', textAplly);
 
+// funções para aplicação de bordas
 const container = document.getElementById('meme-image-container');
 const fireButton = document.getElementById('fire');
 const waterButton = document.getElementById('water');
@@ -27,3 +28,11 @@ function greenBorder() {
 fireButton.addEventListener('click', redBorder);
 waterButton.addEventListener('click', blueBorder);
 earthButton.addEventListener('click', greenBorder);
+
+//função para a aplicação do meme pré fabricado
+function preLoaded(event) {
+  const memePronto = event.target.getAttribute('src');
+  document.querySelector('#meme-image').setAttribute('src', memePronto);
+}
+const divPrePronto = document.querySelector('#sectionDosMemes');
+divPrePronto.addEventListener('click', preLoaded);
