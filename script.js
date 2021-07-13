@@ -40,7 +40,7 @@ divPrePronto.addEventListener('click', preLoaded);
 // função para mostar a foto no meme
 // api FileReader permite ler arquivos, conhecimento adquirido em: https://www.youtube.com/watch?v=a-OHDPt-DPA e https://developer.mozilla.org/pt-BR/docs/Web/API/FileReader
 
-const campoUpLoadDaImagem = document.querySelector('#uploadDaImagem');
+const campoUpLoadDaImagem = document.querySelector('#meme-insert');
 
 function leitorDeImagem(event) {
   const imagemUpada = event.target.files[0];
