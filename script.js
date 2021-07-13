@@ -50,4 +50,5 @@ function leitorDeImagem(event) {
     document.querySelector('#meme-image').setAttribute('src', reader.result);
   };
 }
+
 campoUpLoadDaImagem.addEventListener('change', leitorDeImagem);
