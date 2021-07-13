@@ -29,10 +29,25 @@ fireButton.addEventListener('click', redBorder);
 waterButton.addEventListener('click', blueBorder);
 earthButton.addEventListener('click', greenBorder);
 
-//função para a aplicação do meme pré fabricado
+// função para a aplicação do meme pré fabricado
 function preLoaded(event) {
   const memePronto = event.target.getAttribute('src');
   document.querySelector('#meme-image').setAttribute('src', memePronto);
 }
 const divPrePronto = document.querySelector('#sectionDosMemes');
 divPrePronto.addEventListener('click', preLoaded);
+
+// função para mostar a foto no meme
+// api FileReader permite ler arquivos, conhecimento adquirido em: https://www.youtube.com/watch?v=a-OHDPt-DPA e https://developer.mozilla.org/pt-BR/docs/Web/API/FileReader
+
+const campoUpLoadDaImagem = document.querySelector('#uploadDaImagem');
+
+function leitorDeImagem(event) {
+  const imagemUpada = event.target.files[0];
+  const reader = new FileReader();
+  reader.readAsDataURL(imagemUpada);
+  reader.onloadend = () => {
+    document.querySelector('#meme-image').setAttribute('src', reader.result);    
+  };
+}
+campoUpLoadDaImagem.addEventListener('change', leitorDeImagem);
