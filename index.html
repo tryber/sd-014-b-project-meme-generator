@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Meme Generator</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title-text">MeMe GeNeRaTOr</h1>
+    </header>
+    <nav></nav>
+    <main>
+    <label for="input-text">Frase do meme</label>
+    <input type="text" name="input-text" id="text-input" max="60">
+    <input type="button" value="Cria aí pra mim" id="button-insert">
+    <input type="file" id="meme-insert" accept=".png, .jpg, .jpeg">
+    <div id="meme-image-container">
+      <div id="meme-text">
+        <div id="meme-image">
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer>
+      <button id="fire">
+        <img src="imgs/fire.png" alt="Choose the fire">
+      </button>
+      <button id="water">
+        <img src="imgs/water.png" alt="Choose the water">
+      </button>
+      <button id="earth">
+        <img src="imgs/earth.png" alt="Choose the earth">
+      </button>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
