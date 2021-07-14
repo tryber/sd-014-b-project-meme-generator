@@ -10,8 +10,9 @@ h1 {
   position: relative;
 }
 
-/* sombra aprendida através de: https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-shadow aonde os valores representam (
-    descolamento x; deslocamento y; desfoque, cor da sombra) */
+/* sombra aprendida através de: https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-shadow 
+aonde os valores representam (
+descolamento x; deslocamento y; desfoque, cor da sombra) */
 
 #meme-text {
   position: absolute;
@@ -23,7 +24,7 @@ h1 {
   word-wrap: break-word;
   bottom: 0;
   padding: 0;
-  margin-bottom: 0px;
+  margin-bottom: 0%;
   text-align: center;
 }
 
@@ -58,4 +59,4 @@ button {
 img {
   width: 100%;
   height: 100%;
-} 
+}
