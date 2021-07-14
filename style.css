@@ -10,10 +10,10 @@ h1 {
   position: relative;
 }
 
-/* sombra aprendida através de: 
+/* sombra aprendida através de:
 https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-shadow
 aonde os valores representam (
-descolamento x; deslocamento y; desfoque, cor da sombra)*/
+descolamento x; deslocamento y; desfoque, cor da sombra) */
 
 #meme-text {
   position: absolute;
