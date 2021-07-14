@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Otomanopee+One&display=swap');
+
+html, body {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: 0;
+}
+
+.container {
+  /* width: calc(100% - 200px);
+  height: calc(100% - 200px); */
+  top: 25%;
+  left: 25%;
+  position: absolute;
+}
+
+.title-text {
+  font-family: 'Comic Neue', cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+
+#text-input {
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 15px 0 15px 0;
+  border: 1px solid rgb(168, 168, 168);
+  box-shadow: 3px 7px 7px rgb(200, 200, 200);
+}
+
+label {
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+#meme-insert button {
+  display:inline-block;
+  color: aqua;
+}
+
+#meme-image-container {
+  margin-top: 20px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+#button-insert {
+  margin-left: 15px;
+  font-size: 18px;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 15px 0 15px 0;
+  padding: 10px;
+  box-shadow: 3px 7px 7px rgb(200, 200, 200);
+}
+
+#meme-text {
+  position: absolute;
+  z-index: 1;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+#meme-image {
+  width: 640px;
+  height: 480px;
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+#fire {
+  padding: 14px 20px;
+  background-color: rgb(255, 211, 17);
+  border-radius: 10px;
+  border: none;
+}
+
+#fire:hover {
+  background-color: rgb(255, 230, 117);
+}
+
+#water {
+  padding: 14px 20px;
+  background-color: rgb(18, 179, 228);
+  border-radius: 10px;
+  border: none;
+}
+
+#water:hover {
+  background-color: rgb(96, 214, 250);
+}
+
+#earth {
+  padding: 14px 20px;
+  background-color: rgb(5, 170, 40);
+  border-radius: 10px;
+  border: none;
+}
+
+#earth:hover {
+  background-color: rgb(14, 202, 55);
+}
+
+footer img {
+  width: 40px;
+}
