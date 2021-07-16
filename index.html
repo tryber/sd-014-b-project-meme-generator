@@ -14,12 +14,13 @@
         <input type="text" id="text-input" maxlength="60">
         <br>
         <label>Imagem: </label>
-        <form enctype="multipart/form-data" action="/upload/image" method="post">
-        <input id="image-file" type="file" />
+        <form enctype="multipart/form-data" action="image" method="post">
+        <input id="meme-insert" type="file" accept="image/*">
         </form>       
         <div id="meme-image-container">
-            <div id="meme-text"></div>
-        </div>
+            <img id="meme-image" src="" height="400px" width="400px">
+            <h3 id="meme-text"></h3>
+        </div>        
     </section>
 <script src="script.js"></script>
 </body>

@@ -1,17 +1,34 @@
 #meme-image-container {
+  position: absolute;
   margin: 20px auto;
   border: 1px solid black;
   height: 400px;
-  width: 600px;
+  width: 400px;
   background-color: white;
+  z-index: 1;
 }
 
-.meme-text {
-  width: 400px;
+#meme-text {
+  position: relative;
+  z-index: 3;
+  width: 300px;
   margin: 300px auto;
   word-break: break-all;
+  text-shadow: black 5px 5px 5px;
+  color: white;
+  font-size: 30px;
 }
 
 #text-input {
   width: 280px;
+}
+
+#meme-image {
+  position: absolute;
+  z-index: 2;
+}
+
+section {
+  position: absolute;
+  z-index: 0;
 }
