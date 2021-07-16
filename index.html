@@ -13,12 +13,10 @@
         <label>Texto: </label>
         <input type="text" id="text-input" maxlength="60">
         <br>
-        <label>Imagem: </label>
-        <form enctype="multipart/form-data" action="image" method="post">
-        <input id="meme-insert" type="file" accept="image/*">
-        </form>       
+        <label>Imagem: </label>        
+        <input id="meme-insert" type="file" accept="image/*">        
         <div id="meme-image-container">
-            <img id="meme-image" src="" height="400px" width="400px">
+            <img id="meme-image" src="./img/default.png" height="400px" width="400px">
             <h3 id="meme-text"></h3>
         </div>        
     </section>

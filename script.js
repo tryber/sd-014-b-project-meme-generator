@@ -24,10 +24,10 @@ function renderImage() {
   const reader = new FileReader();
   if (imgInput) {
     reader.readAsDataURL(imgInput);
+    reader.onloadend = function render() {
+      meme.src = reader.result;
+    };
   }
-  reader.onloadend = function () {
-    meme.src = reader.result;
-  };
 }
 
 imgInsert.addEventListener('input', renderImage);
