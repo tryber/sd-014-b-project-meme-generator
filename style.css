@@ -1,18 +1,19 @@
+body {
+  background-color: #b8c1ec;
+}
+
 #meme-image-container {
-  position: absolute;
   margin: 20px auto;
   border: 1px solid black;
-  height: 400px;
-  width: 400px;
-  background-color: white;
-  z-index: 1;
+  height: 600px;
+  width: 600px;  
 }
 
 #meme-text {
   position: relative;
   z-index: 3;
-  width: 300px;
-  margin: 300px auto;
+  width: 400px; 
+  margin: 350px auto;
   word-break: break-all;
   text-shadow: black 5px 5px 5px;
   color: white;
@@ -25,10 +26,43 @@
 
 #meme-image {
   position: absolute;
+  top: 30%;
+  width: 470px;
+  height: 470px;
+  margin: auto;
   z-index: 2;
 }
 
+.container {
+  width: 500px;
+}
+
 section {
-  position: absolute;
-  z-index: 0;
+  border: #b8c1ec 1px solid;
+  border-radius: 4px;
+  height: 700px;
+  background-color: #fffffe;
+}
+
+#input {  
+  width: 350px;
+}
+
+.label {
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+header {
+  margin-top: 10px;
+  background-color: #eebbc3;
+  color: #232946;
+  border: #b8c1ec solid 1px;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 5px;
 }
