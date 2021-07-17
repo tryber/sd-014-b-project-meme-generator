@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Yomogi&display=swap" rel="stylesheet">     
+    <title>Meme Generator</title>
+</head>
+
+<body>
+    <header class="container">
+        <h1>Meme Generator</h1>
+    </header>
+    <section class="container">
+        <div class="container" id="input">
+            <div class="insert-text-container ">
+                <label class="label">Text: </label>
+                <input type="text" id="text-input" maxlength="60">
+            </div>
+            <div class="upload-btn-wrapper">
+                <label for="meme-insert" class="label">Image:</label>
+                <button class="btn">Upload a file</button>
+                <input id="meme-insert" name="meme-insert" type="file" accept="image/*" />
+            </div>
+        </div>
+        <div id="meme-image-container">
+            <img id="meme-image" src="./imgs/default.png" height="470px" width="470px">
+            <h3 id="meme-text"></h3>
+        </div>        
+    </section>
+    <div id="custom-btn-container">
+        <button class="btn" id="fire">Fire</button>
+        <button class="btn" id="water">Water</button>
+        <button class="btn" id="earth">Earth</button>
+    </div>
+    <div id="meme-book-container">
+        <img id="meme-1" src="./imgs/meme1.png" height="100px" width="100px">
+        <img id="meme-2" src="./imgs/meme2.png" height="100px" width="100px">
+        <img id="meme-3" src="./imgs/meme3.png" height="100px" width="100px">
+        <img id="meme-4" src="./imgs/meme4.png" height="100px" width="100px">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
