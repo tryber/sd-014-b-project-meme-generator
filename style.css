@@ -120,3 +120,25 @@ h3 {
   text-align: center;
   font-family: Varela Round, sans-serif;
 }
+
+#custom-btn-container {
+  padding: 8px 20px;
+  margin-top: 10px;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+

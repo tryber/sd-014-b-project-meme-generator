@@ -1,14 +1,10 @@
 const input = document.getElementById('text-input');
 const meme = document.getElementById('meme-image');
 const imgInsert = document.getElementById('meme-insert');
+const btnFilter = document.querySelectorAll('#custom-btn-container button');
+const imgContainer = document.getElementById('meme-image-container');
 
-// function createText() {
-//   const textElement = document.createElement('p');
-//   textElement.classList.add('meme-text');
-//   textContainer.appendChild(textElement);
-// }
-
-// window.onload = createText;
+// window.onload = imgContainer.style.border = '1px black solid';
 
 function insertMemeText() {
   const text = document.querySelector('#meme-text');
@@ -31,3 +27,18 @@ function renderImage() {
 }
 
 imgInsert.addEventListener('input', renderImage);
+
+function changeFilter(event) {
+  imgContainer.style.border = '';
+  if (event.target.id === 'fire') {
+    imgContainer.style.border = '3px dashed red';
+  } else if (event.target.id === 'water') {
+    imgContainer.style.border = '5px double blue';
+  } else {
+    imgContainer.style.border = '6px groove green';
+  }
+}
+
+for (let index = 0; index < btnFilter.length; index += 1) {
+  btnFilter[index].addEventListener('click', changeFilter);
+}
