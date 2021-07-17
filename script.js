@@ -3,6 +3,7 @@ const meme = document.getElementById('meme-image');
 const imgInsert = document.getElementById('meme-insert');
 const btnFilter = document.querySelectorAll('#custom-btn-container button');
 const imgContainer = document.getElementById('meme-image-container');
+const memeReady = document.querySelectorAll('#meme-book-container img');
 
 // window.onload = imgContainer.style.border = '1px black solid';
 
@@ -41,4 +42,12 @@ function changeFilter(event) {
 
 for (let index = 0; index < btnFilter.length; index += 1) {
   btnFilter[index].addEventListener('click', changeFilter);
+}
+
+function memeChange(event) {
+  meme.src = event.target.src;
+}
+
+for (let index = 0; index < memeReady.length; index += 1) {
+  memeReady[index].addEventListener('click', memeChange);
 }
