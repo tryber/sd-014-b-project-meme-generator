@@ -6,6 +6,8 @@ const memeImage = document.querySelector('#meme-image');
 const fire = document.querySelector('#fire');
 const water = document.querySelector('#water');
 const earth = document.querySelector('#earth');
+const allMemes = document.querySelectorAll('.all-memes');
+
 
 function getText() {
   let get = textInput.value;
@@ -49,9 +51,8 @@ function borderEarth() {
 
 earth.addEventListener('click', borderEarth);
 
-/*  function setPixelColor(event) {
-  let selection = document.querySelector('.selected');
-  let selectionColor = window.getComputedStyle(selection).getPropertyValue("background-color");
-  event.target.style.backgroundColor = selectionColor
+for (let index = 0; index < allMemes.length; index += 1) {
+  allMemes[index].addEventListener('click', (event) => {
+    memeImage.src = event.target.src;
+  });
 }
-document.querySelector('#pixel-board').addEventListener('click', setPixelColor) */
