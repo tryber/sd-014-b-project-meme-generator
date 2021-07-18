@@ -3,6 +3,9 @@ const memeImageContainer = document.querySelector('#meme-image-container');
 const memeText = document.querySelector('#meme-text');
 const memeInsert = document.querySelector('#meme-insert');
 const memeImage = document.querySelector('#meme-image');
+const fire = document.querySelector('#fire');
+const water = document.querySelector('#water');
+const earth = document.querySelector('#earth');
 
 function getText() {
   let get = textInput.value;
@@ -24,3 +27,31 @@ function getImage(event) {
   reader.readAsDataURL(event.target.files[0]);
 }
 memeInsert.addEventListener('change', getImage);
+
+function borderFire() {
+  let getBorderFire = window.getComputedStyle(fire).getPropertyValue("border");
+  memeImageContainer.style.border = getBorderFire;
+}
+
+fire.addEventListener('click', borderFire);
+
+function borderWater() {
+  let getBorderWater = window.getComputedStyle(water).getPropertyValue("border");
+  memeImageContainer.style.border = getBorderWater;
+}
+
+water.addEventListener('click', borderWater);
+
+function borderEarth() {
+  let getBorderEarth = window.getComputedStyle(earth).getPropertyValue("border");
+  memeImageContainer.style.border = getBorderEarth;
+}
+
+earth.addEventListener('click', borderEarth);
+
+/*  function setPixelColor(event) {
+  let selection = document.querySelector('.selected');
+  let selectionColor = window.getComputedStyle(selection).getPropertyValue("background-color");
+  event.target.style.backgroundColor = selectionColor
+}
+document.querySelector('#pixel-board').addEventListener('click', setPixelColor) */
