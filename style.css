@@ -1,0 +1,17 @@
+#meme-board{
+  border: 1px solid black;
+  width: 600px;
+  height: 400px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+}
+
+img{
+  width: 600px;
+  height: 400px;
+}
+
