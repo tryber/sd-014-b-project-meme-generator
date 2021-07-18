@@ -3,10 +3,6 @@
   width: 600px;
   height: 400px;
   margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
   background-color: white;
 }
 
@@ -15,6 +11,8 @@
   text-shadow:black 5px 5px 5px;
   font-size: 30px;
   color: white;
+  width: 300px;
+  height: 80px;
 }
 
 img{
@@ -23,3 +21,14 @@ img{
   position: absolute;
 }
 
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
