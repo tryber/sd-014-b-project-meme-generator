@@ -8,9 +8,8 @@ const water = document.querySelector('#water');
 const earth = document.querySelector('#earth');
 const allMemes = document.querySelectorAll('.all-memes');
 
-
 function getText() {
-  let get = textInput.value;
+  const get = textInput.value;
   if (textInput.textContent !== null) {
     memeText.innerHTML = get;
   }
@@ -21,31 +20,31 @@ textInput.addEventListener('keyup', getText);
 
 // Fonte this function: https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
 function getImage(event) {
-  let takeImage = event.target.files[0];
-  let reader = new FileReader();
-  reader.onloadend = function() {
+  const takeImage = event.target.files[0];
+  const reader = new FileReader();
+  reader.onloadend = () => {
     memeImage.src = reader.result;
-  }
-  reader.readAsDataURL(event.target.files[0]);
+  };
+  reader.readAsDataURL(takeImage);
 }
 memeInsert.addEventListener('change', getImage);
 
 function borderFire() {
-  let getBorderFire = window.getComputedStyle(fire).getPropertyValue("border");
+  const getBorderFire = window.getComputedStyle(fire).getPropertyValue('border');
   memeImageContainer.style.border = getBorderFire;
 }
 
 fire.addEventListener('click', borderFire);
 
 function borderWater() {
-  let getBorderWater = window.getComputedStyle(water).getPropertyValue("border");
+  const getBorderWater = window.getComputedStyle(water).getPropertyValue('border');
   memeImageContainer.style.border = getBorderWater;
 }
 
 water.addEventListener('click', borderWater);
 
 function borderEarth() {
-  let getBorderEarth = window.getComputedStyle(earth).getPropertyValue("border");
+  const getBorderEarth = window.getComputedStyle(earth).getPropertyValue('border');
   memeImageContainer.style.border = getBorderEarth;
 }
 
