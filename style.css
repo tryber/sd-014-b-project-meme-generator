@@ -1,16 +1,21 @@
  #meme-image-container {
+     padding: 0;
+     border: 0;
+     margin: 0;
      width: 400px;
      height: 300px;
      background-color: white;
      border: solid 1px black;
      display: flex;
      flex-flow: row wrap;
-     align-items: flex-end;
      position: relative;
      justify-content: center;
  }
 
  #meme-image {
+     padding: 0;
+     border: 0;
+     margin: 0;
      width: 100%;
      height: 100%;
      object-fit: fill;
@@ -21,8 +26,7 @@
     font-size: 30px;
     color: white;
     display: flex;
-    flex-flow: row wrap;
-    align-items: flex-end;
+    flex-flow: wrap;
     margin-bottom: 15px;
     position: absolute;
 }
