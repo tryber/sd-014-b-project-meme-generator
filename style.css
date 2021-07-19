@@ -3,6 +3,7 @@
      border: solid 1px black;
      display: flex;
      flex-flow: row wrap;
+     align-items: flex-end;
  }
 
  #meme-text {
@@ -11,4 +12,9 @@
      color: white;
      position: absolute;
  }
- 
+
+ #meme-image {
+     width: 100%;
+     height: 100%;
+     object-fit: fill;
+ }
