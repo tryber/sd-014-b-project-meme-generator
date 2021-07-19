@@ -10,7 +10,9 @@
      text-shadow: 5px 5px 5px black;
      font-size: 30px;
      color: white;
-     position: absolute;
+     display: flex;
+     flex-flow: row wrap;
+     align-items: flex-end;
  }
 
  #meme-image {
@@ -18,3 +20,15 @@
      height: 100%;
      object-fit: fill;
  }
+
+ .btn {
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+ }
+
+ #fire { background-color: red; }
+
+ #water { background-color: blue; }
+
+ #earth { background-color: green; }
