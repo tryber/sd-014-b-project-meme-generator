@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel ='stylesheet' type = 'text/CSS' href = 'style.css'>
+</head>
+<body>
+  <section class='meme-maker'>
+    <label for="text-input">Texto: </label>
+    <input type="text" id="text-input" name="text-input" maxlength="60">
+    <br>
+    <br>
+    <input type="file" id="meme-insert" accept="image/*">
+    <br>
+    <br>
+    <section id='meme-image-container'>
+      <img src='' id="meme-image">
+      <div>
+        <p id='meme-text'></p>
+      </div>
+    </section>
+    <br>
+    <div>
+      <button type="button" id='fire'>Fire</button>
+      <button type="button" id='water'>Water</button>
+      <button type="button" id='earth'>Earth</button>
+    </div>
+  </section>
+  <script src ="script.js"></script>
+</body>
+</html>
