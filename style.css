@@ -1,5 +1,14 @@
  #meme-image-container {
      background-color: white;
      border: solid 1px black;
+     display: flex;
+     flex-flow: row wrap;
+ }
+
+ #meme-text {
+     text-shadow: 5px 5px 5px black;
+     font-size: 30px;
+     color: white;
+     position: absolute;
  }
  
