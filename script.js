@@ -6,10 +6,6 @@ const imageMeme = document.getElementById('meme-image');
 const imgInput = document.getElementById('meme-insert');
 const memes = document.querySelectorAll('.memes');
 
-/* if (imgInput.value) {
-  imageMeme.src = imgInput.value;
-} */
-
 // Referência: https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
 imgInput.onchange = evt => {
   const [file] = imgInput.files;
