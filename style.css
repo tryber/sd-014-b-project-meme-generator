@@ -1,0 +1,43 @@
+.container {
+  margin: 0.2em auto;
+  padding: 0.3em;
+}
+
+.line-text {
+  padding: 0.2em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  margin-left: 1em;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: mediumblue;
+  color: yellow;
+}
+body {
+  background-color: cadetblue;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+  color: mediumblue;
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+#foto-montada {
+  background-color: white;
+  width: 500px;
+  height: 500px;
+}
+
+#botoes-estilos {
+  display: flex;
+  justify-content: center;
+
+}
