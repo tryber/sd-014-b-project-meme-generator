@@ -44,3 +44,24 @@ document.addEventListener('DOMContentLoaded', loadTrigger);
 }
 
 inputImg.addEventListener('loadend', preview); */
+
+// Feature: custom border
+function fireBorder() {
+  memeContainer.style.border = '3px dashed red';
+}
+
+function waterBorder() {
+  memeContainer.style.border = '5px double blue';
+}
+
+function earthBorder() {
+  memeContainer.style.border = '6px groove green';
+}
+
+const memeContainer = document.querySelector('#meme-image-container');
+const fireButton = document.querySelector('#fire');
+const waterButton = document.querySelector('#water');
+const earthButton = document.querySelector('#earth');
+fireButton.addEventListener('click', fireBorder);
+waterButton.addEventListener('click', waterBorder);
+earthButton.addEventListener('click', earthBorder);
