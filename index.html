@@ -23,21 +23,38 @@
     
     <section class="containers" id="meme-image-container">
       <div id="meme-text"></div>
-      <div id="meme-image">
-        <div id="no-image">
-          <i class="far fa-image" style="font-size: 12vh;"></i>
-          <p style="font-size: 20px; margin: 0;">Inserir um meme</p>
-        </div>
-      </div>
+      <img src="imgs/Inserir-imagem.png" id="meme-image">
     </section>
 
     <section class="containers" id="options-container">
-      <label for="text-input">Inserir legenda:</label>
+      <p id="p1">
+        Inserir legenda: 
+        <span>
+          <button class="buttonsUpDown" id="legUp"><i class="fas fa-angle-up"></i></button>
+          <button class="buttonsUpDown" id="legDown"><i class="fas fa-angle-down"></i></button>
+        </span>
+      </p>
       <input class="m20px" type="text" id="text-input" maxlength="60">
 
-      <label for="meme-insert">Inserir meme:</label>
+      <p>Inserir meme:</p>
       <button class="m20px" id="fileSelect">Selecione a imagem</button>
       <input type="file" name="meme-insert" id="meme-insert" style="display: none;">
+
+      <p>Bordas:</p>
+      <div id="buttonsBorders">
+        <button class="buttonBorder" id="fire">Fire</button>
+        <button class="buttonBorder" id="water">Water</button>
+        <button class="buttonBorder" id="earth">Earth</button>
+      </div>
+
+      <p>Escolha um meme:</p>
+      
+      <div id="contMeme">
+        <div class="box" id="meme-1"></div>
+        <div class="box" id="meme-2"></div>
+        <div class="box" id="meme-3"></div>
+        <div class="box" id="meme-4"></div>
+      </div>
     </section>
   
   </main>
