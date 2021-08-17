@@ -91,7 +91,7 @@ section {
   height: 50px;
 }
 
-#img-meme-container {
+#meme-image-container {
   position: absolute;
   top: 340px;
   border: 1px solid black;
@@ -107,8 +107,8 @@ section {
   width: 400px;
   margin: 350px auto;
   word-break: break-all;
-  text-shadow: aquamarine 5px 5px 5px;
-  color: black;
+  text-shadow: black 5px 5px 5px;
+  color: white;
   font-size: 30px;
 }
 

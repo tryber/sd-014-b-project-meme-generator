@@ -1,6 +1,6 @@
 const imgInsert = document.getElementById('meme-insert');
 const btnMeme = document.querySelectorAll('#btn-container button');
-const imgContainer = document.getElementById('img-meme-container');
+const imgContainer = document.getElementById('meme-image-container');
 const memeReady = document.querySelectorAll('#meme-container img');
 const input = document.getElementById('text-input');
 const meme = document.getElementById('meme-image');
@@ -16,11 +16,11 @@ input.addEventListener('input', insertText);
 
 function renderizationMeme() {
   const inputMeme = document.getElementById('meme-insert').files[0];
-  const memeReader = new FileReader();
+  const memeReady = new FileReader();
   if (inputMeme) {
-    memeReader.readAsDataURL(inputMeme);
-    memeReader.onloadend = function renderization() {
-      meme.src = memeReader.result;
+    memeReady.readAsDataURL(inputMeme);
+    memeReady.onloadend = function renderization() {
+      meme.src = memeReady.result;
     };
   }
 }
@@ -38,14 +38,14 @@ function memeFilter(event) {
   }
 }
 
-for (let index = 0; index < btnFilter.length; index += 1) {
-  btnFilter[index].addEventListener('click', memeFilter);
+for (let index = 0; index < btnMeme.length; index += 1) {
+  btnMeme[index].addEventListener('click', memeFilter);
 }
 
 function inputChange(event) {
   meme.src = event.target.src;
 }
 
-for (let index = 0; index < memeReader.length; index += 1) {
-  memeReader[index].addEventListener('click', inputChange);
+for (let index = 0; index < memeReady.length; index += 1) {
+  memeReady[index].addEventListener('click', inputChange);
 }
