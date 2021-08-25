@@ -6,20 +6,32 @@
   background-size: 100%;
 }
 
-#meme-image-container #fire {
-  border: 3px dashed red;
-}
-
-#meme-image-container #water {
-  border: 5px double blue;
-}
-
-#meme-image-container #earth {
-  border: 6px groove green;
-}
-
 #meme-text {
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
-  color: white  ;
+  color: white;
+}
+
+#fire {
+  background-color: red;
+  font-weight: bolder;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#water {
+  background-color: blue;
+  font-weight: bolder;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#earth {
+  background-color: green;
+  font-weight: bolder;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
