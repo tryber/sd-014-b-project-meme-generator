@@ -6,7 +6,6 @@ const uploadImg = document.getElementById('meme-insert');
 
 uploadImg.addEventListener('change', () => {
   imgContainer.src = `${uploadImg.value}`;
-  console.log(uploadImg.value);
 });
 
 const btnFire = document.getElementById('fire');

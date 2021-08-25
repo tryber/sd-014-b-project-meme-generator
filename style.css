@@ -1,5 +1,5 @@
 #meme-image-container {
-  background-color:white;
+  background-color: white;
   height: 400px;
   width: 400px;
   border: solid 1px black;
@@ -19,7 +19,7 @@
 
 #fire {
   background-color: red;
-  font-weight: bolder;
+  font-weight: 900;
   color: white;
   padding: 5px;
   border-radius: 5px;
@@ -27,7 +27,7 @@
 
 #water {
   background-color: blue;
-  font-weight: bolder;
+  font-weight: 900;
   color: white;
   padding: 5px;
   border-radius: 5px;
@@ -35,7 +35,7 @@
 
 #earth {
   background-color: green;
-  font-weight: bolder;
+  font-weight: 900;
   color: white;
   padding: 5px;
   border-radius: 5px;
@@ -51,4 +51,12 @@ img {
   height: 400px;
   background-size: contain;
   position: relative;
+}
+
+label {
+  margin: 3px;
+}
+
+input {
+  margin: 3px;
 }
