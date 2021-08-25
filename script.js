@@ -1,7 +1,13 @@
 const inputText = document.getElementById('text-input');
 const memeText = document.getElementById('meme-text');
-const inputImg = document.getElementById('meme-image');
 const memeContainer = document.getElementById('meme-image-container');
+const imgContainer = document.getElementById('meme-image');
+const uploadImg = document.getElementById('meme-insert');
+
+uploadImg.addEventListener('change', () => {
+  imgContainer.src = `${uploadImg.value}`;
+  console.log(uploadImg.value);
+});
 
 const btnFire = document.getElementById('fire');
 btnFire.addEventListener('click', () => {
@@ -22,11 +28,22 @@ inputText.addEventListener('keyup', () => {
   memeText.innerText = inputText.value;
 });
 
-inputImg.addEventListener('change', () => {
-  const img = document.createElement('img');
-  img.src = './img/20210604_110822.jpg';
-  img.style.width = '400px';
-  img.style.height = '400px';
-  memeContainer.appendChild(img);
-  console.log(inputImg.value);
+const img1 = document.getElementById('meme-1');
+img1.addEventListener('click', () => {
+  imgContainer.src = './imgs/meme1.png';
+});
+
+const img2 = document.getElementById('meme-2');
+img2.addEventListener('click', () => {
+  imgContainer.src = './imgs/meme2.png';
+});
+
+const img3 = document.getElementById('meme-3');
+img3.addEventListener('click', () => {
+  imgContainer.src = './imgs/meme3.png';
+});
+
+const img4 = document.getElementById('meme-4');
+img4.addEventListener('click', () => {
+  imgContainer.src = './imgs/meme4.png';
 });

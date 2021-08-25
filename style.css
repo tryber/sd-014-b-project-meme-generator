@@ -3,13 +3,18 @@
   height: 400px;
   width: 400px;
   border: solid 1px black;
-  background-size: 100%;
+  background-size: contain;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #meme-text {
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
+  position: absolute;
+  align-self: flex-end;
 }
 
 #fire {
@@ -34,4 +39,16 @@
   color: white;
   padding: 5px;
   border-radius: 5px;
+}
+
+img {
+  width: 70px;
+  height: 50px;
+}
+
+#meme-image {
+  width: 400px;
+  height: 400px;
+  background-size: contain;
+  position: relative;
 }
