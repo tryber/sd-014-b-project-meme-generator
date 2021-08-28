@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/967089a46f.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header id="header-principal">
+    <h1><i class="far fa-grin-squint-tears"></i> Meme Generator</h1>
+    <div id="links">
+      <a href="https://github.com/adilsongb" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/adilsongabriel/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="containers" id="meme-image-container">
+      <div id="meme-text"></div>
+      <img src="imgs/Inserir-imagem.png" id="meme-image">
+    </section>
+
+    <section class="containers" id="options-container">
+      <p id="p1">
+        Inserir legenda: 
+        <span>
+          <button class="buttonsUpDown" id="legUp"><i class="fas fa-angle-up"></i></button>
+          <button class="buttonsUpDown" id="legDown"><i class="fas fa-angle-down"></i></button>
+        </span>
+      </p>
+      <input class="m20px" type="text" id="text-input" maxlength="60">
+
+      <p>Inserir meme:</p>
+      <button class="m20px" id="fileSelect">Selecione a imagem</button>
+      <input type="file" name="meme-insert" id="meme-insert" style="display: none;">
+
+      <p>Bordas:</p>
+      <div id="buttonsBorders">
+        <button class="buttonBorder" id="fire">Fire</button>
+        <button class="buttonBorder" id="water">Water</button>
+        <button class="buttonBorder" id="earth">Earth</button>
+      </div>
+
+      <p>Escolha um meme:</p>
+      
+      <div id="contMeme">
+        <div class="box" id="meme-1"></div>
+        <div class="box" id="meme-2"></div>
+        <div class="box" id="meme-3"></div>
+        <div class="box" id="meme-4"></div>
+      </div>
+    </section>
+  
+  </main>
+  
+</body>
+</html>
