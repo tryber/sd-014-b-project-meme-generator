@@ -17,7 +17,7 @@ function addEventInput() {
   });
 
   inputFile.addEventListener('change', () => {
-    const img = URL.createObjectURL(this.files[0]);
+    const img = URL.createObjectURL(inputFile.files[0]);
     memeImg.src = img;
   });
 
