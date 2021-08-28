@@ -7,12 +7,12 @@ body {
   margin: 0;
   height: 100%;
   min-height: 100%;
-  background-color: rgb(238, 237, 237);
-  font-family: 'Trebuchet MS', sans-serif;
+  background-color: rgb(238 , 237 , 237);
+  font-family: Trebuchet MS, sans-serif;
 }
 
 #header-principal {
-  background-color: rgb(81, 79, 206);
+  background-color: rgb(81 , 79 , 206);
   color: white;
   padding: 10px;
   display: flex;
@@ -33,7 +33,7 @@ body {
 }
 
 #links a:hover {
-  color: rgb(41, 41, 41);
+  color: rgb(41 , 41 , 41);
 }
 
 main {
@@ -62,7 +62,7 @@ main {
 #meme-text {
   color: white;
   text-shadow: 5px 5px 5px black;
-  font-weight: bold;
+  font-weight: 900;
   align-self: flex-start;
   text-align: center;
   font-size: 30px;
@@ -80,13 +80,13 @@ main {
 
 #no-image {
   text-align: center;
-  color: rgb(163, 161, 161);
+  color: rgb(163 , 161 , 161);
   align-self: center;
 }
 
 #p1 {
-  margin-top: 0; 
-  display: flex; 
+  margin-top: 0;
+  display: flex;
   justify-content: space-between;
   box-sizing: border-box;
 }
@@ -99,9 +99,8 @@ main {
 }
 
 /* **************************************** */
-
 #options-container {
-  background-color: rgb(226, 220, 220);
+  background-color: rgb(226 , 220 , 220);
   border-radius: 0 10px 10px 0;
   padding: 30px;
   box-sizing: border-box;
@@ -118,7 +117,7 @@ main {
 }
 
 #text-input:focus {
-  outline-color: rgb(81, 79, 206);
+  outline-color: rgb(81 , 79 , 206);
 }
 
 .m20px {
@@ -128,7 +127,7 @@ main {
 #fileSelect {
   display: block;
   width: 100%;
-  border: 2px solid rgb(81, 79, 206);
+  border: 2px solid rgb(81 , 79 , 206);
   border-radius: 5px;
   padding: 12px;
   font-size: 14px;
@@ -138,7 +137,7 @@ main {
 }
 
 #fileSelect:hover {
-  background-color: rgb(81, 79, 206);
+  background-color: rgb(81 , 79 , 206);
   color: white;
 }
 
@@ -153,13 +152,13 @@ main {
   border: none;
   border-radius: 5px;
   color: white;
-  font-weight: bold;
+  font-weight: 900;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .buttonBorder:hover {
-  background-color: white !important;
+  background-color: white;
   color: black;
 }
 
@@ -184,7 +183,7 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 5px;
-  background-color: rgb(182, 182, 182);
+  background-color: rgb(182 , 182 , 182);
   background-size: cover;
   background-position: center;
   cursor: pointer;
@@ -195,18 +194,18 @@ main {
   opacity: 0.6;
 }
 
-#contMeme .box:nth-child(1) {
-  background-image: url(imgs/meme1.png);
+#contMeme .box:nth-child( 1 ) {
+  background-image: url('imgs/meme1.png');
 }
 
-#contMeme .box:nth-child(2) {
-  background-image: url(imgs/meme2.png);
+#contMeme .box:nth-child( 2 ) {
+  background-image: url('imgs/meme2.png');
 }
 
-#contMeme .box:nth-child(3) {
-  background-image: url(imgs/meme3.png);
+#contMeme .box:nth-child( 3 ) {
+  background-image: url('imgs/meme3.png');
 }
 
-#contMeme .box:nth-child(4) {
-  background-image: url(imgs/meme4.png);
+#contMeme .box:nth-child( 4 ) {
+  background-image: url('imgs/meme4.png');
 }
