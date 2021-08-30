@@ -7,17 +7,30 @@
 }
 
 body {
+  background-image: url('Images/background2.jpg');
   margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#title {
+  text-shadow: 5px 5px 5px gray;
+  color: rgb(170, 56, 56);
 }
 
 #text-input {
-  border: 2px solid green;
+  border: 2px solid gray;
+  max-width: 300px;
   border-radius: 4px;
-  margin: 20px;
+  margin: 10px;
+  padding: 5px;
 }
 
 #meme-insert {
-  margin-left: 20px;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
 }
 
 #meme-image-container {
@@ -25,7 +38,7 @@ body {
   border: 1px solid black;
   height: 300px;
   background-color: white;
-  margin: 20px;
+  margin: 15px;
 }
 
 #meme-image {
@@ -66,6 +79,7 @@ button:hover {
   height: 35px;
   color: white;
   font-weight: 700;
+  margin-right: 20px;
 }
 
 #water {
@@ -86,16 +100,45 @@ button:hover {
   height: 35px;
   color: white;
   font-weight: 700;
+  margin-left: 20px;
 }
 
 #meme-1 , #meme-2 , #meme-3 , #meme-4 {
   width: 110px;
   height: 90px;
   border: 1px solid black;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 20px;
+  margin-top: 15px;
 }
 
 #meme-1:hover , #meme-2:hover , #meme-3:hover , #meme-4:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #meme-image {
+    width: 300px;
+    height: 225px;
+  }
+  #meme-image-container {
+    width: 300px;
+    height: 225px;
+  }
+  #meme-text {
+    width: 280px;
+    font-size: 25px;
+  }
+  #imgs-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  #meme-1 , #meme-2 , #meme-3 , #meme-4 {
+    width: 95px;
+    height: 78px;
+    margin-left: 25px;
+    margin-top: 13px;
+  }
 }
