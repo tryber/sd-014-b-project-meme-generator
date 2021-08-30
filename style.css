@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+body {
+  background-image: url('Images/background2.jpg');
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#title {
+  text-shadow: 5px 5px 5px gray;
+  color: rgb(170, 56, 56);
+}
+
+#text-input {
+  border: 2px solid gray;
+  max-width: 300px;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 5px;
+}
+
+#meme-insert {
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+#meme-image-container {
+  width: 400px;
+  border: 1px solid black;
+  height: 300px;
+  background-color: white;
+  margin: 15px;
+}
+
+#meme-image {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+}
+
+#meme-text {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  color: white;
+  z-index: 1;
+  width: 350px;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#buttons-container {
+  margin-left: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#fire {
+  border: 3px dashed red;
+  border-radius: 4px;
+  background-color: red;
+  width: 70px;
+  height: 35px;
+  color: white;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+#water {
+  border: 5px double blue;
+  border-radius: 4px;
+  background-color: blue;
+  width: 70px;
+  height: 35px;
+  color: white;
+  font-weight: 700;
+}
+
+#earth {
+  border: 6px groove green;
+  border-radius: 4px;
+  background-color: green;
+  width: 70px;
+  height: 35px;
+  color: white;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+#meme-1 , #meme-2 , #meme-3 , #meme-4 {
+  width: 110px;
+  height: 90px;
+  border: 1px solid black;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+#meme-1:hover , #meme-2:hover , #meme-3:hover , #meme-4:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #meme-image {
+    width: 300px;
+    height: 225px;
+  }
+  #meme-image-container {
+    width: 300px;
+    height: 225px;
+  }
+  #meme-text {
+    width: 280px;
+    font-size: 25px;
+  }
+  #imgs-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  #meme-1 , #meme-2 , #meme-3 , #meme-4 {
+    width: 95px;
+    height: 78px;
+    margin-left: 25px;
+    margin-top: 13px;
+  }
+}
